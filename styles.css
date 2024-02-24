@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 75px;
+    border: 2px solid orange;
+    background-color: aqua;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.box:hover {
+    background-color: blue;
+    /* transform: rotate(45deg); */
+    transform: scale(2) translateX(500px) rotate(40deg);
+}
